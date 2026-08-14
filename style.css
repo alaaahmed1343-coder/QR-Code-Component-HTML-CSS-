@@ -1,50 +1,72 @@
-*{margin: 0; padding: 0; box-sizing: border-box;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-body{
+:root {
+    --color-background: hsl(212, 45%, 89%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-title: hsl(218, 44%, 22%);
+    --color-description: hsl(220, 15%, 55%);
+}
+
+body {
     font-family: 'Outfit', sans-serif;
-    background-color: hsl(212, 45%, 89%);
+    background-color: var(--color-background);
+
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+
+    min-height: 100vh;
     padding: 1.25rem;
 }
 
-.card{
-    background-color: hsl(0, 0%, 100%);
-   width: 20rem;
-   max-width: 100%;
-  height: 500px;
-  padding: 1rem;
-  border-radius: 1.25rem;
-  box-shadow: 0 1.5rem 1.5rem rgba(0, 0, 0, 0.04); 
-   text-align: center;
- 
+.card {
+    background-color: var(--color-white);
 
+    width: 20rem;
+    max-width: 100%;
 
+    padding: 1rem;
+
+    border-radius: 1.25rem;
+
+    box-shadow: 0 1.5rem 1.5rem rgba(0, 0, 0, 0.04);
+
+    text-align: center;
 }
-.card__img{
+
+.card__img {
     width: 100%;
-  height: auto;
-  border-radius: 0.75rem;
-  display: block;
+    height: auto;
+
+    border-radius: 0.75rem;
+
+    display: block;
 }
+
 .card__content {
-  padding: 1.5rem 0.5rem 1rem; 
+    padding: 1.5rem 0.5rem 1rem;
 }
 
 .card__title {
-  font-size: 1.375rem; 
-  font-weight: 700;
-  color: hsl(218, 44%, 22%);
-  margin-bottom: 1rem;
-  line-height: 1.3;
+    font-size: 1.375rem;
+    font-weight: 700;
+
+    color: var(--color-title);
+
+    margin-bottom: 1rem;
+
+    line-height: 1.3;
 }
 
 .card__description {
-  font-size: 0.9375rem;
-  font-weight: 400;
-  color: hsl(220, 15%, 55%);
-  line-height: 1.4;
-}
+    font-size: 0.9375rem;
+    font-weight: 400;
 
+    color: var(--color-description);
+
+    line-height: 1.4;
+}
